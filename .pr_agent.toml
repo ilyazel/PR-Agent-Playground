@@ -14,7 +14,7 @@ suggestions_score_threshold = 6
 [pr_description]
 publish_description_as_comment = true
 add_original_user_description = false
-inline_file_summary = 'table'
+inline_file_summary = true
 enable_pr_type = false
 
 [pr_reviewer]
