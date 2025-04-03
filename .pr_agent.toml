@@ -1,0 +1,24 @@
+# See:
+# - Documentation: https://qodo-merge-docs.qodo.ai/usage-guide/configuration_options/
+# - Our global config: https://github.com/opentable/pr-agent-settings/blob/main/.pr_agent.toml
+# - All config options: https://github.com/Codium-ai/pr-agent/blob/main/pr_agent/settings/configuration.toml
+
+[pr_description]
+enable_pr_type=false
+publish_description_as_comment=true
+publish_description_as_comment_persistent=true
+
+[pr_reviewer]
+require_can_be_split_review=true
+extra_instructions = "Do not suggest improvements to code adjacent to changed code."
+enable_review_labels_security=false
+
+[pr_code_suggestions]
+commitable_code_suggestions = true
+extra_instructions = "Do not suggest improvements to code adjacent to changed code."
+persistent_comment=false
+apply_suggestions_checkbox=false
+suggestions_score_threshold=5 # [0-10]| 
+
+[checks]
+enable_auto_checks_feedback=false
