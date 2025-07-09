@@ -8,3 +8,6 @@ generate_ai_title=true
 # auto approval 💎
 enable_auto_approval=true # Set to true to enable auto-approval of PRs under certain conditions
 auto_approve_for_low_review_effort=2 # -1 to disable, [1-5] to set the threshold for auto-approval
+
+[pr_code_suggestions]
+wiki_page_accepted_suggestions = true
