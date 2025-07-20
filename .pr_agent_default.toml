@@ -1,0 +1,44 @@
+[config]
+enable_custom_labels = true
+
+[custom_labels."switch_change"]
+description = "Use when a PR contains changes to src/main/webapp/WEB-INF/config/en-us/switches/50.switches.cfg file"
+
+[custom_labels."without_unit_test"]
+description = "Use when a PR contains Java code change but no unit test change"
+
+[pr_code_suggestions]
+suggestions_score_threshold = 6
+
+
+[pr_description]
+publish_description_as_comment = true
+add_original_user_description = false
+inline_file_summary = true
+enable_pr_type = false
+
+[pr_reviewer]
+require_security_review = false
+require_ticket_analysis_review = false
+enable_review_labels_security = false
+enable_review_labels_effort = false
+extra_instructions = """\
+Effort 1: < 30 minutes review time
+Effort 2: 30-60 minutes review time
+Effort 3: 60-90 minutes review time
+Effort 4: 90-120 minutes review time
+Effort 5: 120 minutes or more review time
+"""
+
+
+[pr_improve]
+extra_instructions = """\
+Hide the organization best practice suggestion that doesn't apply \
+"""
+
+[pr_analyze]
+enable_help_text = false
+
+[github_app]
+handle_push_trigger = true
+pr_commands = ["/describe", "/improve", "/review"]
