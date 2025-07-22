@@ -2,7 +2,7 @@
 pr_commands = ["/describe", "/review --pr_reviewer.num_code_suggestions=0"]
 
 [pr_description]
-generate_ai_title=true
+generate_ai_title=false
 publish_description_as_comment = true
 add_original_user_description = false
 
