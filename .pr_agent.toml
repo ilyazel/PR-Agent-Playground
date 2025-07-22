@@ -5,6 +5,7 @@ pr_commands = ["/describe", "/review --pr_reviewer.num_code_suggestions=0"]
 generate_ai_title=false
 publish_description_as_comment = true
 add_original_user_description = false
+use_description_markers = true
 
 [config]
 # auto approval 💎
