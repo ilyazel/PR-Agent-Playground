@@ -1,5 +1,10 @@
 [github_app]
 pr_commands = ["/describe", "/review --pr_reviewer.num_code_suggestions=0"]
+handle_push_trigger = true
+push_commands = [
+    "/describe",
+    "/review",
+]
 
 [pr_description]
 generate_ai_title=false
